@@ -5,14 +5,15 @@ import org.springframework.cloud.config.Environment;
 import org.springframework.cloud.config.server.EnvironmentRepository;
 import org.springframework.stereotype.Component;
 
-import br.com.softplan.unj.dao.mapdb.MapDbDataSourceDAOImpl;
+import br.com.softplan.unj.dao.mapdb.ApplicationDataSourceDAOImpl;
 
 @Component
 public class UnjCloudEnviromentRepository implements EnvironmentRepository {
 
 	@Autowired
-	private MapDbDataSourceDAOImpl datasourceDAO;
-	
+	private ApplicationDataSourceDAOImpl applicationDatasourceDAO;
+
+	@Override
 	public Environment findOne(String aplicacao, String sufixo, String versao) {
 		return null;
 	}

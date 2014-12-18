@@ -1,25 +1,24 @@
 package br.com.softplan.unj.model;
 
-
 public class DataSourceConnectionProperties {
 
 	private String url;
 	private String driver;
 	private String user;
 	private String password;
-	
+
 	private ConnectionPoolProperties specificConnectionPoolProperties = new ConnectionPoolProperties();
-	
+
 	public ConnectionPoolProperties getSpecificConnectionPoolProperties() {
 		return this.specificConnectionPoolProperties;
 	}
-	
+
 	public void setSpecificConnectionPoolProperties(ConnectionPoolProperties specificConnectionPoolProperties) {
 		this.specificConnectionPoolProperties = specificConnectionPoolProperties;
 	}
-	
+
 	public String getUrl() {
-		return url;
+		return this.url;
 	}
 
 	public void setUrl(String url) {
@@ -27,7 +26,7 @@ public class DataSourceConnectionProperties {
 	}
 
 	public String getDriver() {
-		return driver;
+		return this.driver;
 	}
 
 	public void setDriver(String driver) {
@@ -35,7 +34,7 @@ public class DataSourceConnectionProperties {
 	}
 
 	public String getUser() {
-		return user;
+		return this.user;
 	}
 
 	public void setUser(String user) {
@@ -43,11 +42,11 @@ public class DataSourceConnectionProperties {
 	}
 
 	public String getPassword() {
-		return password;
+		return this.password;
 	}
 
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 }
