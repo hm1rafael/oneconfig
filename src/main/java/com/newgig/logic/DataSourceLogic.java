@@ -1,14 +1,14 @@
-package br.com.softplan.unj.logic;
+package com.newgig.logic;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.softplan.unj.dao.DataSourceDAO;
-import br.com.softplan.unj.handler.MergePropertyHandler;
-import br.com.softplan.unj.model.ConnectionPoolProperties;
-import br.com.softplan.unj.model.DataSourceConnectionProperties;
+import com.newgig.dao.DataSourceDAO;
+import com.newgig.handler.MergePropertyHandler;
+import com.newgig.model.ConnectionPoolProperties;
+import com.newgig.model.DataSourceConnectionProperties;
 
 @Service
 public class DataSourceLogic {

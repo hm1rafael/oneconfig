@@ -1,8 +1,8 @@
-package br.com.softplan.unj.dao;
+package com.newgig.dao;
 
 import java.util.Collection;
 
-import br.com.softplan.unj.model.DataSourceConnectionProperties;
+import com.newgig.model.DataSourceConnectionProperties;
 
 public interface DataSourceDAO {
 

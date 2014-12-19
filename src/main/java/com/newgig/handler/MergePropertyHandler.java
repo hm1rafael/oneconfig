@@ -1,4 +1,4 @@
-package br.com.softplan.unj.handler;
+package com.newgig.handler;
 
 import org.springframework.stereotype.Component;
 

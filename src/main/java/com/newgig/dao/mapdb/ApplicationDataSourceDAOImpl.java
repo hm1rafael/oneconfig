@@ -1,4 +1,4 @@
-package br.com.softplan.unj.dao.mapdb;
+package com.newgig.dao.mapdb;
 
 import org.springframework.stereotype.Repository;
 

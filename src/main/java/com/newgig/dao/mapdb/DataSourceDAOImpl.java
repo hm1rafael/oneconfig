@@ -1,4 +1,4 @@
-package br.com.softplan.unj.dao.mapdb;
+package com.newgig.dao.mapdb;
 
 import java.util.Collection;
 
@@ -6,8 +6,8 @@ import javax.annotation.PreDestroy;
 
 import org.springframework.stereotype.Repository;
 
-import br.com.softplan.unj.dao.DataSourceDAO;
-import br.com.softplan.unj.model.DataSourceConnectionProperties;
+import com.newgig.dao.DataSourceDAO;
+import com.newgig.model.DataSourceConnectionProperties;
 
 @Repository
 public class DataSourceDAOImpl implements DataSourceDAO {

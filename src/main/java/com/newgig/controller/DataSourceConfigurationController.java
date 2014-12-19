@@ -1,4 +1,4 @@
-package br.com.softplan.unj.controller;
+package com.newgig.controller;
 
 import java.util.Collection;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.softplan.unj.logic.DataSourceLogic;
-import br.com.softplan.unj.model.ConnectionPoolProperties;
-import br.com.softplan.unj.model.DataSourceConnectionProperties;
+import com.newgig.logic.DataSourceLogic;
+import com.newgig.model.ConnectionPoolProperties;
+import com.newgig.model.DataSourceConnectionProperties;
 
 @RestController
 @RequestMapping("${unj.oneconfig.prefix:/ds}")

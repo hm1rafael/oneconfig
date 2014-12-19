@@ -1,4 +1,4 @@
-package br.com.softplan.unj.model;
+package com.newgig.model;
 
 import java.util.ArrayList;
 import java.util.Collection;

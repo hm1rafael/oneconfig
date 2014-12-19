@@ -1,4 +1,4 @@
-package br.com.softplan.unj.model;
+package com.newgig.model;
 
 public class DataSourceConnectionProperties {
 
