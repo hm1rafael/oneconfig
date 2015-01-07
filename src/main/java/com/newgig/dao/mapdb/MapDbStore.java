@@ -11,7 +11,7 @@ import org.mapdb.DBMaker;
 
 import com.hazelcast.core.MapStore;
 
-public class MapDbStore<T> implements MapStore<String, T> {
+class MapDbStore<T> implements MapStore<String, T> {
 
 	private static final String FILE_PREFIX = "_file";
 	private Map<String, T> collection;

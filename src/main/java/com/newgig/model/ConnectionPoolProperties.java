@@ -1,10 +1,11 @@
 package com.newgig.model;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ConnectionPoolProperties {
+public class ConnectionPoolProperties implements Serializable {
 	
 	private Map<String, String> connectionPoolProperties = new ConcurrentHashMap<String, String>();
 	

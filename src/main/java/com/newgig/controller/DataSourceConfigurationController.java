@@ -3,7 +3,6 @@ package com.newgig.controller;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,22 +10,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.newgig.logic.DataSourceLogic;
 import com.newgig.model.ConnectionPoolProperties;
-import com.newgig.model.DataSourceConnectionProperties;
+import com.newgig.model.DatasourceConnectionProperties;
 
 @RestController
-@RequestMapping("${unj.oneconfig.prefix:/ds}")
+@RequestMapping("${oneconfig.datasource.controller.prefix:/ds}")
 public class DataSourceConfigurationController {
 
 	@Autowired
 	private DataSourceLogic dataSourceLogic;
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public void add(@PathVariable("application") String aliasName, DataSourceConnectionProperties dataSourceConnectionProperties) {
+	public void add(String aliasName, DatasourceConnectionProperties dataSourceConnectionProperties) {
 		this.dataSourceLogic.add(aliasName, dataSourceConnectionProperties);
 	}
 
 	@RequestMapping(value = "/addDefaultDsProperties")
-	public void addDefaultConnectionProperties(DataSourceConnectionProperties dataSourceConnectionProperties) {
+	public void addDefaultConnectionProperties(DatasourceConnectionProperties dataSourceConnectionProperties) {
 		this.dataSourceLogic.addDefaultDsConnectionProperties(dataSourceConnectionProperties);
 	}
 
@@ -42,7 +41,7 @@ public class DataSourceConfigurationController {
 
 	@ResponseBody
 	@RequestMapping(value = "/list", method = RequestMethod.POST)
-	public Collection<DataSourceConnectionProperties> list() {
+	public Collection<DatasourceConnectionProperties> list() {
 		return this.dataSourceLogic.list();
 	}
 

@@ -1,6 +1,8 @@
 package com.newgig.model;
 
-public class DataSourceConnectionProperties {
+import java.io.Serializable;
+
+public class DatasourceConnectionProperties implements Serializable {
 
 	private String url;
 	private String driver;

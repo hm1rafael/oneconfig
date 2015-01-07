@@ -4,11 +4,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableConfigServer
 @Configuration
 @EnableWebMvc
+@EnableAspectJAutoProxy
 @ComponentScan("com.newgig")
 public class OneConfigBootStrap {
 
